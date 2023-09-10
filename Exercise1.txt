@@ -4,20 +4,29 @@ Query OK, 1 row affected (0.01 sec)
 kd2_80085_ChaitanyaBhavar@localhost>use karad;
 Database changed
 
+=======================================================================================================================================================================================
+
 kd2_80085_ChaitanyaBhavar@localhost>CREATE TABLE SEMP(EMPNO CHAR(4),EMPNAME CHAR(20),BASIC FLOAT,DEPTNO CHAR(2),DEPTHEAD CHAR(4));
 Query OK, 0 rows affected (0.03 sec)
 
+=======================================================================================================================================================================================
+
 kd2_80085_ChaitanyaBhavar@localhost>CREATE TABLE SDEPT(DEPTNO CHAR(2),DEPTNAME CHAR(15));
 Query OK, 0 rows affected (0.02 sec)
+
+=======================================================================================================================================================================================
 
 kd2_80085_ChaitanyaBhavar@localhost>INSERT INTO SDEPT(DEPTNO,DEPTNAME) VALUES('10','DEVELOPMENT'),('20','TRAINING');
 Query OK, 2 rows affected (0.01 sec)
 Records: 2  Duplicates: 0  Warnings: 0
 
+=======================================================================================================================================================================================
 
 kd2_80085_ChaitanyaBhavar@localhost>INSERT INTO SEMP(EMPNO,EMPNAME,BASIC,DEPTNO,DEPTHEAD) VALUES('0001','SUNIL',6000,'10',NULL),('0002','HIREN',8000,'20',NULL),('0003','ALI',4000,'10','0001'),('0004','GEORGE',6000,NULL,'0002');
 Query OK, 4 rows affected (0.02 sec)
 Records: 4  Duplicates: 0  Warnings: 0
+
+=======================================================================================================================================================================================
 
 kd2_80085_ChaitanyaBhavar@localhost>CREATE TABLE S(`S#` CHAR(2),Sname VARCHAR(20),STATUS INT,CITY VARCHAR(20));
 Query OK, 0 rows affected (0.03 sec)
@@ -41,5 +50,15 @@ E');
 Query OK, 3 rows affected (0.01 sec)
 Records: 3  Duplicates: 0  Warnings: 0
 
+kd2_80085_ChaitanyaBhavar@localhost>INSERT INTO J(`J#`,Jname,City) VALUES('P1','Sunbeam','London'),('P2','Acer','Athens'),('P3','Microsoft','New York'),('P4','Dell','Paris');
+Query OK, 3 rows affected (0.01 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+
+kd2_80085_ChaitanyaBhavar@localhost>INSERT INTO SPJ(`S#`,`P#`,`J#`,QTY) VALUES('S1','P1','J1',10),('S2','P2','J2',20),('S3','P3','J3',30);
+Query OK, 3 rows affected (0.01 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+=======================================================================================================================================================================================
 
 
